@@ -45,7 +45,17 @@
 
 <h3>Server</h3>
 
-<p>Lorem Ipsum</p>
+<p>The actual routing and tour planning in the ToureNPlaner system is done by our server component. 
+This is a Java based application, which uses the <a href="http://www.jboss.org/netty">Netty Framework</a> and <a href="http://jackson.codehaus.org/">Jackson</a> to act as a HTTP server for AJAX requests.<br>
+Together with a high performance graph data structure it provides an extendable framework for graph based algorithms. All algorithms hosted in the server are readily 
+accessible to all clients via a JSON based protocol.
+</p>
+
+<p>
+Today the Server hosts algorithms for calculating the shortest path between points, as well as the Traveling Salesmen problem (<a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">TSP</a>), that is the shortest tour visiting all given points. We also provide a binary search based algorithm to compute a short route between 2 points that has less than a given limit of climb (<a href="http://www.mpi-inf.mpg.de/~mehlhorn/ftp/rcsp.ps">CSP</a>).<br>
+As many of you will know the former two problems are very hard to solve (NP-hard to be exact) so they will only be approximated for larger problem instances.
+For example, the current version of our server can solve TSPs with up to 11 points optimally and will use a 2-Opt based heuristic for anything bigger than that.
+</p>
 
 <h3>Authors</h3>
 
