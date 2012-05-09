@@ -400,6 +400,35 @@ Full-Width Styles
   -ms-box-shadow: none;
 }
 
+#main_content a.button {
+  display: block;
+  z-index: 10;
+  float: left;
+  width: 200px;
+  padding: 10px;
+  margin-right: 20px;
+  text-align: center;
+  color: #fff;
+  background: #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+}
+
+#main_content a.button:hover {
+  background: #335dcc;
+  color: #fff;
+  text-shadow: none;
+}
+
+
 
 /*******************************************************************************
 Small Device Styles
